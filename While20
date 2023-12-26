@@ -1,0 +1,27 @@
+package While;
+
+import java.util.Scanner;
+
+public class While20 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("n sonini kiriting (n > 0): ");
+        int n = scanner.nextInt();
+
+        boolean bor = false;
+
+        while (n > 0) {
+            int qoldiq = n % 10;
+            if (qoldiq == 2) {
+                bor = true;
+                break;
+            }
+            n /= 10;
+        }
+        if (bor) {
+            System.out.println("Berilgan sonning ichida 2 raqami bor.");
+        } else {
+            System.out.println("Berilgan sonning ichida 2 raqami yo'q.");
+        }
+    }
+}
