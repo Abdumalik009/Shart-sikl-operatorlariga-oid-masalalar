@@ -1,0 +1,25 @@
+package While;
+import java.util.Scanner;
+public class While12 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n (n > 1): ");
+        int n = scanner.nextInt();
+
+        int k = 1;
+        int sum = 0;
+
+        while (sum <= n) {
+            sum += k;
+            if (sum <= n) {
+                System.out.println("1 dan " + k + " gacha yigindi: " + sum);
+                k++;
+            }
+        }
+
+        System.out.println("Eng katta k: " + (k - 1));
+
+
+    }
+}
