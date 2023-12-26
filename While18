@@ -1,0 +1,21 @@
+package While;
+
+import java.util.Scanner;
+
+public class While18 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Istalgan butun son kiriting : ");
+        int n = scanner.nextInt();
+
+
+
+
+        while (n > 0) {
+            int v = n % 10;
+            System.out.print(v);
+            n = n / 10;
+
+        }
+    }
+}
