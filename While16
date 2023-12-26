@@ -1,0 +1,28 @@
+package While;
+
+import java.util.Scanner;
+
+public class While16 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Boshlang'ich masofani (10 km) kiriting: ");
+        double m1 = scanner.nextDouble();
+
+        System.out.print("Har kuni qo'shilayotgan foizni kiriting (0 < p < 50): ");
+        double p = scanner.nextDouble();
+
+
+        double M = 0;
+        int days = 0;
+
+        while (M <= 200) {
+            M += m1;
+            m1 *= (1 + p / 100); 
+            days++;
+        }
+        System.out.println("Jami kunlar soni: " + days);
+        System.out.println("Jami masofa: " + M);
+    }
+}
