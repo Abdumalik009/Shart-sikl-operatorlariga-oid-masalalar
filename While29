@@ -1,0 +1,31 @@
+package While;
+
+import java.util.Scanner;
+
+public class While29 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.print("e haqiqiy musbat sonini kiriting: ");
+        double e = scanner.nextDouble();
+
+  
+        double a1 = 1;
+        double a2 = 2;
+        double ak = a2;
+        double ak1 = a1;
+        int k = 3;
+
+        while (Math.abs(ak - ak1) >= e) {
+            double temp = ak;
+            ak = (ak1 + 2 * ak) / 3;
+            ak1 = temp;
+            k++;
+        }
+
+        System.out.println("ak: " + ak);
+        System.out.println("ak - 1: " + ak1);
+        System.out.println("Shart qanoatlantirilganda eng kichik k: " + (k - 1));
+    }
+}
