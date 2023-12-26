@@ -1,0 +1,33 @@
+package While;
+
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class While30 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("A ni kiriting (musbat butun son): ");
+        int A = scanner.nextInt();
+
+        System.out.print("B ni kiriting (musbat butun son): ");
+        int B = scanner.nextInt();
+
+        System.out.print("C ni kiriting (musbat butun son): ");
+        int C = scanner.nextInt();
+
+        scanner.close();
+
+        int count = 0;
+        int i = 1;
+
+        while (i * i <= A * B * C) {
+            count++;
+            i++;
+        }
+
+        System.out.println("A x B to'rtburchak ichida tomoni C bo'lgan kvadratdan " + count + " ta sig'adi.");
+    }
+}
+
