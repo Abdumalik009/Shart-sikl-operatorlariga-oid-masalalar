@@ -1,0 +1,24 @@
+package While;
+
+import java.util.Scanner;
+
+public class While14 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("a sonini kiriting (a > 1): ");
+        double a = scanner.nextDouble();
+
+        int k = 1;
+        double sum = 1.0;
+
+        while (sum <= a) {
+            k++;
+            sum += 1.0 / k;
+        }
+
+        System.out.println("Eng katta k: " + (k - 1));
+        System.out.println("Yig'indi: " + sum);
+    }
+}
