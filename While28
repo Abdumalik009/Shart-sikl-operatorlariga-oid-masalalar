@@ -1,0 +1,26 @@
+package While;
+import java.util.Scanner;
+
+public class While28 {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("e haqiqiy musbat sonini kiriting: ");
+        double e = scanner.nextDouble();
+
+    
+        double a1 = 2;
+        double ak = a1;
+        int k = 2;
+
+        while (1.0 / ak >= e) {
+            ak = 2 + 1.0 / ak;
+            k++;
+        }
+
+        
+        System.out.println("Ketma-ketlik xadlari " + e + " ga teng yoki kichik bo'lgan ak-1: " + ak);
+        System.out.println("Xadlarning soni: " + (k - 1));
+    }
+}
