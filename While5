@@ -1,0 +1,27 @@
+package While;
+
+import java.util.Scanner;
+
+public class While5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n sonini kiriting (n > 0): ");
+        int n = scanner.nextInt();
+
+        scanner.close();
+
+        int k = 0;
+        int temp = n;
+        while (temp > 1 && temp % 2 == 0) {
+            temp /= 2;
+            k++;
+        }
+
+        if (temp == 1) {
+            System.out.println(n + " soni 2 ning darajasi: " + k);
+        } else {
+            System.out.println(n + " soni 2 ning darajasi emas");
+        }
+    }
+}
