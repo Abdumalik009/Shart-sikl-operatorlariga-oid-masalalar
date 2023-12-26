@@ -1,0 +1,27 @@
+package While;
+
+import java.util.Scanner;
+
+public class While24 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n sonini kiriting (n > 1): ");
+        int n = scanner.nextInt();
+
+        int fib1 = 1;
+        int fib2 = 1;
+
+        while (fib2 < n) {
+            int temp = fib2;
+            fib2 = fib1 + fib2;
+            fib1 = temp;
+        }
+
+        if (fib2 == n) {
+            System.out.println(n + " soni Fibonachchi sonlari orasida bor.");
+        } else {
+            System.out.println(n + " soni Fibonachchi sonlari orasida yo'q.");
+        }
+    }
+}
