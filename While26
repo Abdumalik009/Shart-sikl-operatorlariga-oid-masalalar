@@ -1,0 +1,33 @@
+package While;
+
+import java.util.Scanner;
+
+public class While26 {
+    public static void main(String[] args) {
+      
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("n sonini kiriting (n > 1): ");
+        int n = scanner.nextInt();
+
+        
+        int fib1 = 1;
+        int fib2 = 1;
+        int fibPrev = 0;
+        int fibNext = 0;
+
+        while (fib2 < n) {
+            fibPrev = fib1;
+            fibNext = fib2;
+
+            int temp = fib2;
+            fib2 = fib1 + fib2;
+            fib1 = temp;
+        }
+
+       
+        System.out.println(n + " sonidan bir oldingi Fibonachchi soni: " + fibPrev);
+        System.out.println(n + " sonidan bir keyingi Fibonachchi soni: " + fibNext);
+    }
+}
