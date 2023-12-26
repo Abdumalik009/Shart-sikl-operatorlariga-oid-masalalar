@@ -1,0 +1,32 @@
+package While;
+
+import java.util.Scanner;
+
+public class While23 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Birinchi sonni kiriting: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Ikkinchi sonni kiriting: ");
+        int num2 = scanner.nextInt();
+
+        int a = num1;
+        int b = num2;
+
+        while (a != b) {
+            if (a > b) {
+                a -= b;
+            } else {
+                b -= a;
+            }
+        }
+
+        int ekub = a;
+
+        System.out.println(num1 + " va " + num2 + " sonlarining ekubi: " + ekub);
+
+
+    }
+}
