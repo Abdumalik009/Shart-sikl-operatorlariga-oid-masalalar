@@ -1,0 +1,29 @@
+package While;
+
+import java.util.Scanner;
+
+public class While15 {
+    public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Boshlang'ich summani kiriting: ");
+        double S = scanner.nextDouble();
+
+        System.out.print("Foizni kiriting: ");
+        double p = scanner.nextDouble();
+
+        System.out.print("Qancha oyligini kiriting: ");
+        int k = scanner.nextInt();
+
+        
+
+        int month = 0;
+        while (month < k) {
+            S *= (1 + p / 100); 
+            month++;
+        }
+
+        System.out.println(k + " oydan keyin summa 2 martadan ko'p bo'ladi: " + S);
+    }
+}
