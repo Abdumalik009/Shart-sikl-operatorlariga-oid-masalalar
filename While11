@@ -1,0 +1,19 @@
+package While;
+import java.util.Scanner;
+
+public class While11 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int n = scanner.nextInt();
+        int k = 1;
+        int s = 0;
+        while (s < n) {
+            k++;
+            s += k;
+
+            System.out.println("Yig'indi:" + s);
+            System.out.println("Eng kichik son:" + k);
+        }
+    }
+}
