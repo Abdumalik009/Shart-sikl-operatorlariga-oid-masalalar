@@ -1,0 +1,21 @@
+package While;
+import java.util.Scanner;
+public class While1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("A ni kiriting: ");
+        int A = scanner.nextInt();
+
+        System.out.print("B ni kiriting: ");
+        int B = scanner.nextInt();
+        if (A>B) {
+            int sum = A - B;
+            System.out.println("Bo'sh qismining uzunligi: " + sum);
+        }else {
+            System.out.println("A Bdan katta emas");
+        }
+
+    }
+
+}
