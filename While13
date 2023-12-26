@@ -1,0 +1,26 @@
+package While;
+import java.util.Scanner;
+public class While13{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("a : ");
+        double a = scanner.nextDouble();
+
+        double sum = 0;
+        int k = 1;
+
+        while (sum < a) {
+            sum += 1.0 / k;
+            if (sum >= a) {
+                System.out.println("1 dan " + k + " gacha yigdisi: " + sum);
+                break;
+            }
+            k++;
+        }
+
+        System.out.println(" kichik k: " + k);
+
+
+    }
+}
