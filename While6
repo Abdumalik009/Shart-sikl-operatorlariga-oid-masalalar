@@ -1,0 +1,23 @@
+package While;
+
+import java.util.Scanner;
+
+public class While6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("n sonini kiriting (n > 0): ");
+        int n = scanner.nextInt();
+
+        scanner.close();
+
+        long result = 1;
+        int i = n;
+
+        while (i > 0) {
+            result *= i;
+            i -= 2;
+        }
+
+        System.out.println("n!! = " + result);
+    }
+}
