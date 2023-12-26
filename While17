@@ -1,0 +1,25 @@
+package While;
+
+import java.util.Scanner;
+
+public class While17 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("n sonini kiriting: ");
+        int n = scanner.nextInt();
+
+        System.out.print("m sonini kiriting: ");
+        int m = scanner.nextInt();
+
+
+
+        int t = n / m;
+        int sum = n % m;
+
+
+        System.out.println(n + " ni " + m + " ga bo'lib butun qismi: " + t);
+        System.out.println("Qoldiq: " + sum);
+    }
+}
